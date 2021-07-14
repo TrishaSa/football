@@ -1,3 +1,5 @@
+
+/*common style*/
 body{
 	font-family: 'Poppins', sans-serif;
 	padding: 0;
@@ -60,8 +62,8 @@ button:hover{
 .sec-players{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	/*grid-row-gap: 27px;
-	grid-column-gap: 30px;*/
+	grid-row-gap: 27px;
+	grid-column-gap: 30px;
 	margin-top: 70px;
 }
 .players{
@@ -87,6 +89,24 @@ button:hover{
 	color: #6C6C6C;
 }
 
+/*team country*/
+
+.sec-team{
+ margin-top: 50px;
+}
+.teams{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+.team-head{
+	text-align: center;
+	font-size: 35px;
+}
+.team img{
+	height: 200px;
+	width: 200px;
+}
+
 /*competation*/
 .sec-comp{
 	margin-top: 21px;
@@ -94,7 +114,7 @@ button:hover{
 .competation{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr) ;
-	/*grid-column-gap: 30px; */
+	grid-column-gap: 30px; 
 }
 .img img{
 	width: 300px;
@@ -103,12 +123,12 @@ button:hover{
 	background-color: white;
 	transition: opacity 2s, transform 2s;
 	border-radius: 10px;
-	overflow: hidden;
 }
 .img img:hover{
 	opacity: 1;
-	transform: scale(1.2);
+	transform: scale(0.90);
 }
+
 /*footer*/
 
 .footer-content {
@@ -138,10 +158,9 @@ button:hover{
     font-size: 18px;
     margin-bottom: 63px;
 }
-/* -----------------------------------------
-            Media Queries 
------------------------------------------*/
+/* ------Media Queries ----*/
 /* For Mobile Devices Starts */
+
 @media only screen and (max-width: 688px) {
 
     header {
@@ -174,9 +193,10 @@ button:hover{
         height: 100%;
     }
 
-    .sec-players, .competation {
+    .sec-players, .competation, .teams {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 24px;
+        justify-items: center;
     }
 
     .player {
@@ -191,4 +211,3 @@ button:hover{
     }
     
 }
-
