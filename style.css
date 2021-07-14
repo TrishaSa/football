@@ -204,13 +204,8 @@ button:hover{
         margin: 0;
     }
 
-    .player-tittle{
-        font-size: 20px;
-
-    }
-
     .player-detail{
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .logo img {
