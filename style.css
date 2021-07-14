@@ -27,6 +27,10 @@ header{
     height: 438px;
     margin: 153px 140px 86px 0;
 }
+.head-img img:hover{
+    transform: rotate(15deg);
+    transition: transform 1s ease-in-out;
+}
 .head-tittle{
  font-weight: bold;
  font-size: 64px;
