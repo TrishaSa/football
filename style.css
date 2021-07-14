@@ -2,7 +2,6 @@
 /*common style*/
 body{
 	font-family: 'Poppins', sans-serif;
-	padding: 0;
 	margin: 0;
 }
 
@@ -201,9 +200,17 @@ button:hover{
     }
 
     .player {
-        padding: 10px;
+        padding: 12px;
         margin: 0;
+    }
 
+    .player-tittle{
+        font-size: 20px;
+
+    }
+
+    .player-detail{
+        font-size: 10px;
     }
 
     .logo img {
